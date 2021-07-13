@@ -1,0 +1,114 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body {
+    scrollbar-color: rgba(69,76,252,1) rgba(209,29,253,1); 
+}
+
+body {
+    background: rgb(28,20,33);
+    background: linear-gradient(149deg, rgba(28,20,33,1) 0%, rgba(209,29,253,1) 61%, rgba(69,76,252,1) 100%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .music-player {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 25vh;
+            width: 50%;
+            border: 3px solid black;
+            border-radius: 40px;
+            background-color: grey;
+
+                .album-art {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 3px solid black;
+                }
+
+                .music-panel {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 100%;
+                    width: 70%;
+
+                        h2 {
+                            height: 60px;
+                            font-size: 30px;
+                            font-family: sans-serif;
+                            letter-spacing: 10px;
+                        }
+
+                        .music-progress-bar {
+                            height: 8px;
+                            width: 100%;
+                            border-radius: 40px;
+                            background-color: black;
+
+                                .music-progress-notch {
+                                    margin-top: 1px;
+                                    height: 6px;
+                                    width: 0px;
+                                    border-radius: 40px;
+                                    cursor: pointer;
+                                    background: rgb(28,20,33);
+                                    background: linear-gradient(149deg, rgba(28,20,33,1) 0%, rgba(209,29,253,1) 61%, rgba(69,76,252,1) 100%);
+                                }
+                        }
+
+                        .music-controller {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            height: 17%;
+                            width: 100%;
+                            margin: 3px 0;
+                            background-color: lightgray;
+                            border-radius: 40px;
+                            border: 2px solid black;
+
+                                .previous-track-button {
+                                    cursor: pointer;
+                                }
+                                
+                                .rewind-button {
+                                    cursor: pointer;
+                                }
+
+                                .play-button {
+                                    cursor: pointer;
+                                }
+                                .play-button.hide {
+                                    display: none;
+                                }
+
+                                .pause-button {
+                                    cursor: pointer;
+                                }
+                                .pause-button.hide {
+                                    display: none;
+                                }
+
+                                .fast-forward-button {
+                                    cursor: pointer;
+                                }
+
+                                .next-track-button {
+                                    cursor: pointer;
+                                }
+                        }
+                }
+        }
+}

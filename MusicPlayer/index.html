@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" 
+            crossorigin="anonymous"
+        >
+        <script src="./src/app.js" type="module" defer></script>
+        <title>Music Player App</title>
+    </head>
+    <body>
+        <!-- <button class="test">TEST</button> -->
+
+        <div class="audio-container">
+            <source src="./music/02 - Crawl.mp3" class="track-1" type="audio/mp3">
+        </div>
+
+        <div class="container">
+            <div class="music-player">
+                <img src="./image/AlbumArt_{B5020207-474E-4720-484B-1039B77C6A00}_Large.jpg" class="album-art"></img>
+                
+                <div class="music-panel">
+                    <h2 class="music-title"></h2>
+
+                    <div class="music-progress-bar">
+                        <div draggable="true" class="music-progress-notch"></div>
+                    </div>
+
+                    <div class="music-controller">
+                        <i class="fas fa-fast-backward fa-2x previous-track-button"></i>
+                        <i class="fas fa-backward fa-2x rewind-button"></i>
+                        <i class="fas fa-play-circle fa-2x play-button"></i>
+                        <i class="fas fa-pause-circle fa-2x pause-button hide"></i>
+                        <i class="fas fa-forward fa-2x fast-forward-button"></i>
+                        <i class="fas fa-fast-forward fa-2x next-track-button"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
